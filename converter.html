@@ -1,0 +1,17 @@
+<meta charset="utf8">
+<script type="text/javascript">
+
+	var rubUsd = prompt("Какую сумму вы хототе поменять на доллары");
+	var rubEur = prompt("Какую сумму вы хототе поменять на евро");
+	var usd = 61.67
+	var eur = 69
+
+	rubUsd = parseInt(rubUsd);
+	rubEur = parseInt(rubEur);
+
+	var sumUsd = rubUsd / usd;
+	var sumEur = rubEur / eur;
+	
+	alert (rubUsd + " рублей: " + sumUsd.toFixed(2) + " долларов \n" + rubEur +" рублей: " + sumEur.toFixed(2) + " евро");
+
+</script>

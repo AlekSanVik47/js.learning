@@ -1,0 +1,15 @@
+	<meta charset="utf-8">
+	<script type="text/javascript">
+		
+			var depositAmount = +prompt("Введите сумму которую Выхотите положить на депозит");
+			var interest = +prompt("Введите на какой процент годового дохода Вы рассчитываете");
+
+			depositAmount = ((depositAmount * interest) / 100);
+				var resalt = "Изменения размера вклада погодам: \n";
+
+			for (var i = 1; i < 6; i++) {
+				depositAmount = depositAmount + (depositAmount * interest);
+				resalt +=i + " год: " + depositAmount.toFixed(2) + " рублей\n";
+	}
+			alert(resalt);
+	</script>
